@@ -1,0 +1,164 @@
+* {
+margin: 0;
+padding:0;
+box-sizing: border-box;
+}
+
+body {
+    background-color: #21a107a1;
+}
+
+
+h1 { display:flex; flex-basis: auto;  margin: 18px 0; color: #005c6a ; font-size: 70px; padding: 20px; justify-content: center
+}
+
+h2 {display:flex; flex-basis: auto;  margin: 18px 0; color: #005c6a ; font-size: 70px; padding: 20px; justify-content: center}
+
+h3 { display: flex; flex-basis: auto ;  margin: 18px 0; font-size: 50px; padding: 20px; justify-content: center;
+    color: #D02702 ;
+}
+
+    h4 { display: flex; flex-basis: auto ;  margin: 18px 0; 
+    color: #D02702  ; 
+    font-size: 30px; padding: 20px; justify-content: center}
+
+p {display: flex;  margin: 16px 0; color: #0273DC; font-size: 35px ; justify-content: center
+}
+
+footer {display: flex;  margin: 16px 0; color: #055730; font-size: 15px ; justify-content: center
+}  
+ 
+nav, section {
+	width: 1200px;
+	margin: 0 auto; flex-basis: auto 
+}
+
+nav{
+	display: flex; 
+	justify-content:space-between;
+	height: 120px;
+	background-color: #0BB4FF; 
+	align-items: center;
+}
+
+nav ul {
+	display: flex;
+	list-style-type: none;
+}
+
+nav ul li a {
+	padding: 8px 16px;
+	background-color: #0D8920;
+	display: block;
+	margin-left: 8px;
+	text-decoration: none;
+	font-family: sans-serf;
+	color: #000000
+}
+
+nav ul li a:hover {
+	background-color: #07F5E2;
+text-decoration: line-through;
+	color: #fff;
+}
+.btn {
+	display: block;
+	background-color: #051652;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	font-family: sans-serf;
+        padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+	background-color: #0D8789;
+	border: 1px solid #000;
+	color: #000;
+}
+
+/* TABLET (≥376px) */
+@media (min-width: 376px) {
+    .content-section {
+        flex-direction: column;
+    }
+    /* Cards in row */
+    .cards {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .card {
+        flex: 1 1 calc(33.333% - 1rem);
+    }
+    /* Content sections side by side */
+    .content-section {
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-section.reverse {
+        flex-direction: column;
+    }
+    /* Footer in row */
+    .footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .footer-col {
+        flex: 1 1 calc(25% - 1rem);
+    }
+}
+/* DESKTOP (≥769px) */
+@media (min-width: 769px) {
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .content-section {
+        flex-direction: row;
+    }
+
+    .content-section.reverse {
+        flex-direction: row-reverse;
+    }
+
+    /* Show desktop nav, hide hamburger */
+    .nav-toggle, .nav-toggle-label {
+        display: flex;
+    }
+
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+        gap: 1rem; }
+}
+
+/* Phone(≥480px) */
+@media (min-width: 480px) {
+     .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .content-section {
+        flex-direction: row;
+    }
+    .content-section.reverse {
+        flex-direction: row-reverse;
+    }
+    /* Show phone nav, hide hamburger */
+    .nav-toggle, .nav-toggle-label {
+        display: flex;
+    }
+    .nav-links {
+        display: flex;
+        position: static;
+        flex-direction: row;
+        background: none;
+        width: auto;
+        gap: 1rem; }
+
+}
