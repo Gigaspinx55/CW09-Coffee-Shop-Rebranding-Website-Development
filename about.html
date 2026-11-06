@@ -131,6 +131,7 @@
                 </nav>
             </header>
         </div>
+    
 
         <div class="container">
             <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
@@ -225,6 +226,58 @@
         </div>
     </li>
 </nav>
+ <!-- Hero
+       Position utilities: https://getbootstrap.com/docs/5.3/utilities/position/
+       Border radius utilities: https://getbootstrap.com/docs/5.3/utilities/borders/#radius -->
+        <header class="position-relative overflow-hidden text-white rounded-bottom-4 mx-md-3">
+            <!-- Object fit (background image): https://getbootstrap.com/docs/5.3/utilities/object-fit/ -->
+            <img src="img/kristaps-ungurs-5KsdEQtfmOw-unsplash copy.jpg" alt=""
+                class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover">
+            <!-- Opacity (image overlay): https://getbootstrap.com/docs/5.3/utilities/opacity/ -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+            <!-- Container: https://getbootstrap.com/docs/5.3/layout/containers/ -->
+            <div class="container position-relative py-5">
+                <!-- Grid: https://getbootstrap.com/docs/5.3/layout/grid/ -->
+                <div class="row my-md-5">
+                    <div class="col-md-9 col-lg-6">
+                        <!-- Badge: https://getbootstrap.com/docs/5.3/components/badge/ -->
+                        <span class="badge text-bg-warning d-inline-flex align-items-center gap-1 mb-3">
+                            <!-- Icon: https://icons.getbootstrap.com/icons/stars/ -->
+                            <i class="bi bi-stars" aria-hidden="true"></i>
+                            Limited Time Offer
+                        </span>
+                        <!-- Display heading: https://getbootstrap.com/docs/5.3/content/typography/#display-headings -->
+                        <h1 class="display-4 mb-3">Happy Hour is Here</h1>
+                        <p class="mb-4">Join us for the perfect afternoon pick-me-up. Enjoy artisan coffee paired with
+                            our freshly baked scones at unbeatable prices.</p>
+
+                        <!-- Buttons: https://getbootstrap.com/docs/5.3/components/buttons/
+               Stacked-to-row layout: https://getbootstrap.com/docs/5.3/components/buttons/#block-buttons -->
+                        <div class="d-grid d-sm-flex gap-3 mb-4">
+                            <a href="#" class="btn btn-warning btn-lg fs-6 px-3">Reserve Your Spot</a>
+                            <a href="#" class="btn btn-outline-light btn-lg fs-6 px-3">View Menu</a>
+                        </div>
+
+                        <!-- Unstyled list: https://getbootstrap.com/docs/5.3/content/typography/#unstyled
+               Flex utilities: https://getbootstrap.com/docs/5.3/utilities/flex/ -->
+                        <ul class="list-unstyled d-flex flex-column flex-sm-row gap-3 mb-0">
+                            <li class="d-flex align-items-center gap-2">
+                                <!-- Icon: https://icons.getbootstrap.com/icons/clock/ -->
+                                <i class="bi bi-clock text-warning" aria-hidden="true"></i>
+                                2PM - 5PM Daily
+                            </li>
+                            <li class="d-flex align-items-center gap-2">
+                                <!-- Icon: https://icons.getbootstrap.com/icons/geo-alt/ -->
+                                <i class="bi bi-geo-alt text-warning" aria-hidden="true"></i>
+                                Downtown Location
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
     <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
       <symbol id="bootstrap" viewBox="0 0 118 94">
         <title>Bootstrap</title>
